@@ -1,0 +1,150 @@
+﻿@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+        </div>
+    </div>*@
+@{
+    ViewBag.Title = "Home Page";
+}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<div class="jumbotron">
+    <div>
+        <img id="header" src="~/img/title.png"></img>
+    </div>
+
+    <img id="downtownMap" src="~/img/downtownMap.png" border="0" width="1326" height="2764" orgWidth="1326" orgHeight="2764" usemap="#purpleLineImageMap" alt="" />
+    <map name="purpleLineImageMap" id="purpleLineImageMap">
+        <area shape="rect" coords="1324,2762,1326,2764" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_96489" />
+        <area id="6017" shape="poly" coords="545,97,541,98,538,100,536,103,535,107,536,111,538,114,541,116,545,117,549,116,552,114,554,111,555,107,554,103,552,100,549,98" style="outline:none;" />
+        <area id="6018" shape="poly" coords="565,21,561,22,558,24,556,27,555,31,556,35,558,38,561,40,565,41,569,40,572,38,574,35,575,31,574,27,572,24,569,22" style="outline:none;" target="_self" />
+        <area id="6016" shape="poly" coords="556,135,552,136,549,138,547,141,546,145,547,149,549,152,552,154,556,155,560,154,563,152,565,149,566,145,565,141,563,138,560,136" style="outline:none;" target="_self" />
+        <area id="6015" shape="poly" coords="655,120,651,121,648,123,646,126,645,130,646,134,648,137,651,139,655,140,659,139,662,137,664,134,665,130,664,126,662,123,659,121" style="outline:none;" target="_self" />
+        <area id="6025" shape="poly" coords="637,262,632,263,629,266,626,269,625,274,626,279,629,282,632,285,637,286,642,285,645,282,648,279,649,274,648,269,645,266,642,263" style="outline:none;" target="_self" />
+        <area id="6014" shape="poly" coords="665,362,661,363,658,365,656,368,655,372,656,376,658,379,661,381,665,382,669,381,672,379,674,376,675,372,674,368,672,365,669,363" style="outline:none;" target="_self" />
+        <area id="6026" shape="poly" coords="693,371,689,372,686,374,684,377,683,381,684,385,686,388,689,390,693,391,697,390,700,388,702,385,703,381,702,377,700,374,697,372" style="outline:none;" target="_self" />
+        <area id="6027" shape="poly" coords="774,343,770,344,767,346,765,349,764,353,765,357,767,360,770,362,774,363,778,362,781,360,783,357,784,353,783,349,781,346,778,344" style="outline:none;" target="_self" />
+        <area id="6013" shape="poly" coords="710,346,706,347,703,349,701,352,700,356,701,360,703,363,706,365,710,366,714,365,717,363,719,360,720,356,719,352,717,349,714,347" style="outline:none;" target="_self" />
+        <area id="6028" shape="poly" coords="839,454,834,455,831,458,828,461,827,466,828,471,831,474,834,477,839,478,844,477,847,474,850,471,851,466,850,461,847,458,844,455" style="outline:none;" target="_self" />
+        <area id="6029" shape="poly" coords="827,651,822,652,819,655,816,658,815,663,816,668,819,671,822,674,827,675,832,674,835,671,838,668,839,663,838,658,835,655,832,652" style="outline:none;" target="_self" />
+        <area id="6031" shape="poly" coords="739,674,735,675,732,677,730,680,729,684,730,688,732,691,735,693,739,694,743,693,746,691,748,688,749,684,748,680,746,677,743,675" style="outline:none;" target="_self" />
+        <area id="6010" shape="poly" coords="712,688,708,689,705,691,703,694,702,698,703,702,705,705,708,707,712,708,716,707,719,705,721,702,722,698,721,694,719,691,716,689" style="outline:none;" target="_self" />
+        <area id="6032" shape="poly" coords="644,675,639,676,636,679,633,682,632,687,633,692,636,695,639,698,644,699,649,698,652,695,655,692,656,687,655,682,652,679,649,676" style="outline:none;" target="_self" />
+        <area id="6008" shape="poly" coords="557,678,553,679,550,681,548,684,547,688,548,692,550,695,553,697,557,698,561,697,564,695,566,692,567,688,566,684,564,681,561,679" style="outline:none;" target="_self" />
+        <area id="6007" shape="poly" coords="493,690,488,691,485,694,482,697,481,702,482,707,485,710,488,713,493,714,498,713,501,710,504,707,505,702,504,697,501,694,498,691" style="outline:none;" target="_self" />
+        <area id="6006" shape="poly" coords="497,800,492,801,489,804,486,807,485,812,486,817,489,820,492,823,497,824,502,823,505,820,508,817,509,812,508,807,505,804,502,801" style="outline:none;" target="_self" />
+        <area id="6005" shape="poly" coords="498,894,493,895,490,898,487,901,486,906,487,911,490,914,493,917,498,918,503,917,506,914,509,911,510,906,509,901,506,898,503,895" style="outline:none;" target="_self" />
+        <area id="6004" shape="poly" coords="500,993,495,994,492,997,489,1000,488,1005,489,1010,492,1013,495,1016,500,1017,505,1016,508,1013,511,1010,512,1005,511,1000,508,997,505,994" style="outline:none;" target="_self" />
+        <area id="6024" shape="poly" coords="513,1083,509,1084,506,1086,504,1089,503,1093,504,1097,506,1100,509,1102,513,1103,517,1102,520,1100,522,1097,523,1093,522,1089,520,1086,517,1084" style="outline:none;" target="_self" />
+        <area id="6037" shape="poly" coords="492,1106,488,1107,485,1109,483,1112,482,1116,483,1120,485,1123,488,1125,492,1126,496,1125,499,1123,501,1120,502,1116,501,1112,499,1109,496,1107" style="outline:none;" target="_self" />
+        <area id="6003" shape="poly" coords="525,1209,521,1210,518,1212,516,1215,515,1219,516,1223,518,1226,521,1228,525,1229,529,1228,532,1226,534,1223,535,1219,534,1215,532,1212,529,1210" style="outline:none;" target="_self" />
+        <area id="6002" shape="poly" coords="486,1210,482,1211,479,1213,477,1216,476,1220,477,1224,479,1227,482,1229,486,1230,490,1229,493,1227,495,1224,496,1220,495,1216,493,1213,490,1211" style="outline:none;" target="_self" />
+        <area id="6001" shape="poly" coords="581,1314,577,1315,574,1317,572,1320,571,1324,572,1328,574,1331,577,1333,581,1334,585,1333,588,1331,590,1328,591,1324,590,1320,588,1317,585,1315" style="outline:none;" target="_self" />
+        <area id="6238" shape="poly" coords="583,1381,579,1382,576,1384,574,1387,573,1391,574,1395,576,1398,579,1400,583,1401,587,1400,590,1398,592,1395,593,1391,592,1387,590,1384,587,1382" style="outline:none;" target="_self" />
+        <area id="6081" shape="poly" coords="481,1423,477,1424,474,1426,472,1429,471,1433,472,1437,474,1440,477,1442,481,1443,485,1442,488,1440,490,1437,491,1433,490,1429,488,1426,485,1424" style="outline:none;" target="_self" />
+        <area id="6239" shape="poly" coords="463,1368,459,1369,456,1371,454,1374,453,1378,454,1382,456,1385,459,1387,463,1388,467,1387,470,1385,472,1382,473,1378,472,1374,470,1371,467,1369" style="outline:none;" target="_self" />
+        <area id="USE" shape="rect" coords="721,2641,1269,2710" href="~/img/USE.png" style="outline:none;" target="_self" />
+    </map>
+    <p><br /><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><b>Stop: </b><u><i>Grand Ave & 1st St</i></u></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_001.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_002.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_003.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <h5>Location: </h5>
+                <!--button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+
+
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery.rwdImageMaps.min.js"></script>
+<script>
+    /*This was just a test. Angel testing hotspots*/
+    $(document).ready(function (e) {
+        $('img[usemap]').rwdImageMaps();
+
+        $('area').on('click', function () {
+            $('#exampleModalCenter').modal('show');;
+        });
+    });
+</script>
