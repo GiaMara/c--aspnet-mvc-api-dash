@@ -145,6 +145,17 @@
 
         $('area').on('click', function () {
             $('#exampleModalCenter').modal('show');;
+            @*location.href = '@Url.Action("Details","Home", new { id = Model.ID } )'*@
+
+            evt.preventDefault();
+            evt.stopPropagation();
+
+            var $detailDiv = $('#detailsDiv'),
+                url = $(this).data('url');
+
+            $.get(url, function (data) {
+                $detailsDiv.replaceWith(data);
+            });
         });
     });
 </script>

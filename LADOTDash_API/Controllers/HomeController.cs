@@ -22,5 +22,19 @@ namespace LADOTDash_API.Controllers
 
             return View(model);
         }
+
+        public ActionResult Details(int id)
+        {
+            var model = _db.BusStops.Find(id);
+            return View("Details", model);
+        }
+
+        public ActionResult ShowModal()
+        {
+            return View();
+        }
+
+
+
     }
 }
