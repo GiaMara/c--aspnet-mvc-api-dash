@@ -109,3 +109,4 @@ C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.csp
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.Attraction.resources
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.ChangeAttractionID.resources
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.BusStopAttractionVM.resources
+C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.RemoveID.resources

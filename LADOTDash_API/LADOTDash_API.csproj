@@ -253,6 +253,10 @@
     <Compile Include="Migrations\201805311703145_BusStopAttractionVM.Designer.cs">
       <DependentUpon>201805311703145_BusStopAttractionVM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805311853461_RemoveID.cs" />
+    <Compile Include="Migrations\201805311853461_RemoveID.Designer.cs">
+      <DependentUpon>201805311853461_RemoveID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -435,6 +439,7 @@
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\ShowModal.cshtml" />
     <Content Include="Views\Home\BusStop.cshtml" />
+    <Content Include="Views\Home\_Attraction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -470,6 +475,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805311703145_BusStopAttractionVM.resx">
       <DependentUpon>201805311703145_BusStopAttractionVM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805311853461_RemoveID.resx">
+      <DependentUpon>201805311853461_RemoveID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

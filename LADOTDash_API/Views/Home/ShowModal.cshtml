@@ -1,13 +1,22 @@
-﻿
-@{
-    ViewBag.Title = "ShowModal";
-}
+﻿@model IEnumerable<LADOTDash_API.Models.BusStopAttractionVM>
+<table class="mt-5">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.BusStopID</td>
+            <td>@item.ImgSrc</td>
+            <td>@item.ImgDescription</td>
+            <td>@item.StopLocation</td>
 
-<h2>ShowModal</h2>
+        </tr>
+    }
+</table>
 
-<div class="modal-content">
+
+
+<div class="modal-content w-25">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"><b>Stop: </b><u><i>Grand Ave & 1st St</i></u></h5>
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>Stop: </b><u><i></i></u></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -20,15 +29,33 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_001.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_002.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_003.jpg" alt="Third slide">
-                </div>
+                @*<div class="carousel-item active">
+                        <img class="d-block w-100" src="" alt="First slide">
+                    </div>*@
+                @foreach (var item in Model)
+                {
+                    if (item.ImgSrc.Contains("_001"))
+                    {
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="@Url.Content(item.ImgSrc)" alt="@Url.Content(item.ImgDescription)">
+                            <hr />
+                            <h5 id="footer" class="text-right">@Url.Content(item.ImgDescription)</h5>
+
+                        </div>
+
+                    }
+                    else
+                    {
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="@Url.Content(item.ImgSrc)" alt="@Url.Content(item.ImgDescription)">
+                            <hr />
+                            <h5 id="footer" class="text-right">@Url.Content(item.ImgDescription)</h5>
+
+                        </div>
+
+                    }
+
+                }
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -41,9 +68,6 @@
         </div>
     </div>
 
-    <div class="modal-footer">
-        <h5>Location: </h5>
-        <!--button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
-        <!--button type="button" class="btn btn-primary">Save changes</button-->
-    </div>
 </div>
+<script src="~/Scripts/jquery.rwdImageMaps.min.js"></script>
+

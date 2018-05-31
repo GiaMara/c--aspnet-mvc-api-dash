@@ -28,10 +28,10 @@ namespace LADOTDash_API.Controllers
             var m = from a in _db.Attractions
                     select a;
             var model = m.Where(a => a.BusStopID == id).ToList();
-            //var s = _db.BusStops.Find(id);
-            var s = _db.BusStops.ToList();
-            var b = s.FirstOrDefault(st => st.BusStopID == id);
-            var l = b.StopLocation;
+            var s = _db.BusStops.Find(id);
+            //var s = _db.BusStops.ToList();
+            //var b = s.FirstOrDefault(st => st.BusStopID == id);
+            var l = s.StopLocation;
             var n = from a in model
                         select new BusStopAttractionVM
                         {
@@ -46,9 +46,25 @@ namespace LADOTDash_API.Controllers
             //return View("Details", model);
         }
 
-        public ActionResult ShowModal()
+        public ActionResult ShowModal(int id)
         {
-            return View();
+            var m = from a in _db.Attractions
+                    select a;
+            var model = m.Where(a => a.BusStopID == id).ToList();
+            var s = _db.BusStops.Find(id);
+            //var s = _db.BusStops.ToList();
+            //var b = s.FirstOrDefault(st => st.BusStopID == id);
+            var l = s.StopLocation;
+            var n = from a in model
+                    select new BusStopAttractionVM
+                    {
+                        BusStopID = a.BusStopID,
+                        StopLocation = l,
+                        ImgSrc = a.ImgSrc,
+                        ImgDescription = a.ImgDescription
+
+                    };
+            return View(n);
         }
 
         public ActionResult BusStop(int id)
