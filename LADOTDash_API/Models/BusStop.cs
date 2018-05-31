@@ -11,6 +11,5 @@ namespace LADOTDash_API.Models
         public int BusStopID { get; set; }
         public string StopLocation { get; set; }
         public ICollection<Attraction> Attractions { get; set; }
-
     }
 }

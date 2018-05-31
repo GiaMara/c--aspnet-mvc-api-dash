@@ -244,6 +244,10 @@
     <Compile Include="Migrations\201805310011205_Attraction.Designer.cs">
       <DependentUpon>201805310011205_Attraction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805310023388_ChangeAttractionID.cs" />
+    <Compile Include="Migrations\201805310023388_ChangeAttractionID.Designer.cs">
+      <DependentUpon>201805310023388_ChangeAttractionID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -453,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805310011205_Attraction.resx">
       <DependentUpon>201805310011205_Attraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805310023388_ChangeAttractionID.resx">
+      <DependentUpon>201805310023388_ChangeAttractionID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

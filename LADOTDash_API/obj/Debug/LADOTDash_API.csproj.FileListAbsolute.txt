@@ -107,3 +107,4 @@ c:\users\gm\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.pdb
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.InitialCreate.resources
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.csproj.GenerateResource.cache
 C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.Attraction.resources
+C:\Users\GM\source\repos\LADOTDash_API\LADOTDash_API\obj\Debug\LADOTDash_API.Migrations.ChangeAttractionID.resources
