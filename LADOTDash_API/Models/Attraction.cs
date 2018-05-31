@@ -5,12 +5,11 @@ using System.Web;
 
 namespace LADOTDash_API.Models
 {
-    public class BusStop
+    public class Attraction
     {
         public int ID { get; set; }
         public int BusStopID { get; set; }
-        public string StopLocation { get; set; }
-        public ICollection<Attraction> Attractions { get; set; }
-
+        public string ImgSrc { get; set; }
+        public string ImgDescription { get; set; }
     }
 }

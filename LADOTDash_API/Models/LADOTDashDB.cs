@@ -13,5 +13,6 @@ namespace LADOTDash_API.Models
 
         }
         public DbSet<BusStop> BusStops { get; set; }
+        public DbSet<Attraction> Attractions { get; set; }
     }
 }
