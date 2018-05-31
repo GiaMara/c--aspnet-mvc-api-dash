@@ -25,8 +25,25 @@ namespace LADOTDash_API.Controllers
 
         public ActionResult Details(int id)
         {
-            var model = _db.BusStops.Find(id);
-            return View("Details", model);
+            var m = from a in _db.Attractions
+                    select a;
+            var model = m.Where(a => a.BusStopID == id).ToList();
+            //var s = _db.BusStops.Find(id);
+            var s = _db.BusStops.ToList();
+            var b = s.FirstOrDefault(st => st.BusStopID == id);
+            var l = b.StopLocation;
+            var n = from a in model
+                        select new BusStopAttractionVM
+                        {
+                            BusStopID = a.BusStopID,
+                            StopLocation = l,
+                            ImgSrc = a.ImgSrc,
+                            ImgDescription = a.ImgDescription
+                            
+                        };
+            return View(n);
+            //var model = _db.BusStops.Find(id);
+            //return View("Details", model);
         }
 
         public ActionResult ShowModal()

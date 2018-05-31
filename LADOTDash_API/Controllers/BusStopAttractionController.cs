@@ -15,16 +15,16 @@ namespace LADOTDash_API.Controllers
 
 
 
-        public IEnumerable<Attraction> GetAllAttractions()
+        public IEnumerable<BusStopAttractionVM> GetAllAttractions()
         {
-            var attractions = _db.Attractions.ToList();
+            var attractions = _db.BusStopAttractions.ToList();
             return attractions;
         }
 
         public IHttpActionResult GetAttraction(int id)
         {
-            var attractions = _db.Attractions.ToList();
-            var attraction = attractions.FirstOrDefault((p) => p.AttractionID == id);
+            var attractions = _db.BusStopAttractions.ToList();
+            var attraction = attractions.FirstOrDefault((p) => p.BusStopID == id);
             if (attraction == null)
             {
                 return NotFound();

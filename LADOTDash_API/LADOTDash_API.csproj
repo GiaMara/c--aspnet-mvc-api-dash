@@ -249,6 +249,10 @@
     <Compile Include="Migrations\201805310023388_ChangeAttractionID.Designer.cs">
       <DependentUpon>201805310023388_ChangeAttractionID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805311703145_BusStopAttractionVM.cs" />
+    <Compile Include="Migrations\201805311703145_BusStopAttractionVM.Designer.cs">
+      <DependentUpon>201805311703145_BusStopAttractionVM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -463,6 +467,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805310023388_ChangeAttractionID.resx">
       <DependentUpon>201805310023388_ChangeAttractionID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805311703145_BusStopAttractionVM.resx">
+      <DependentUpon>201805311703145_BusStopAttractionVM.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
