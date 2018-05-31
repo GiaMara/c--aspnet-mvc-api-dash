@@ -13,7 +13,7 @@ namespace LADOTDash_API.Controllers
 
         public ActionResult Index()
         {
-                return View();
+            return View();
         }
 
         public ActionResult List()
@@ -32,6 +32,17 @@ namespace LADOTDash_API.Controllers
         public ActionResult ShowModal()
         {
             return View();
+        }
+
+        public ActionResult BusStop(int id)
+        {
+            var model =
+                            from a in _db.Attractions
+                            select a;
+            var m = model.Where(s => s.BusStopID == id).ToList();
+
+
+            return View(m);
         }
 
 
