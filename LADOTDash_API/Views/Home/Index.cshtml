@@ -79,14 +79,14 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" >
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="modalbodydiv">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="~/img/DASHLinePhotos/6001_001.jpg" alt="First slide">
                         </div>
@@ -144,17 +144,21 @@
         $('img[usemap]').rwdImageMaps();
 
         $('area').on('click', function () {
-            $('#exampleModalCenter').modal('show');;
-            @*location.href = '@Url.Action("Details","Home", new { id = Model.ID } )'*@
+            alert($(this).attr('id'));
+            var id = $(this).attr('id');
+            alert(id);
+            window.location.href = "/Home/ShowModal/"+id+"/";
 
-            evt.preventDefault();
-            evt.stopPropagation();
 
-            var $detailDiv = $('#detailsDiv'),
-                url = $(this).data('url');
+                evt.preventDefault();
+                evt.stopPropagation();
 
-            $.get(url, function (data) {
-                $detailsDiv.replaceWith(data);
+                var $detailDiv = $('#detailsDiv'),
+                    url = $(this).data('url');
+
+                $.get(url, function (data) {
+                    $detailsDiv.replaceWith(data);
+
             });
         });
     });

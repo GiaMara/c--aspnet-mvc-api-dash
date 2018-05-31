@@ -45,7 +45,6 @@ namespace LADOTDash_API.Controllers
             //var model = _db.BusStops.Find(id);
             //return View("Details", model);
         }
-
         public ActionResult ShowModal(int id)
         {
             var m = from a in _db.Attractions

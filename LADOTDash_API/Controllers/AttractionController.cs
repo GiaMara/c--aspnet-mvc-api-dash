@@ -8,23 +8,22 @@ using System.Web.Http;
 
 namespace LADOTDash_API.Controllers
 {
-    public class BusStopAttractionController : ApiController
+    public class AttractionController : ApiController
     {
-
         LADOTDashDB _db = new LADOTDashDB();
 
 
 
-        public IEnumerable<BusStopAttractionVM> GetAllAttractions()
+        public IEnumerable<Attraction> GetAllAttractions()
         {
-            var attractions = _db.BusStopAttractions.ToList();
+            var attractions = _db.Attractions.ToList();
             return attractions;
         }
 
         public IHttpActionResult GetAttraction(int id)
         {
-            var attractions = _db.BusStopAttractions.ToList();
-            var attraction = attractions.FirstOrDefault((p) => p.BusStopID == id);
+            var attractions = _db.Attractions.ToList();
+            var attraction = attractions.Where((p) => p.BusStopID == id).ToList();
             if (attraction == null)
             {
                 return NotFound();
